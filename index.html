@@ -5,27 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio &lt;dev&gt;</title>
+    <style>
+        body{ 
+            background-color: #121212;
+        }
+        
+        h1 { 
+            text-align: center;
+            color: white;
+        }
+
+        hr{ 
+            border-color: #262d34;
+        }
+
+        .texto, h3 { 
+            color: #627d98;
+            text-align: center
+        }
+
+        .links { 
+            text-decoration: none;
+            color: #c62828;
+        }
+
+        .list { 
+            color: #0e34a0;
+            text-align: center;
+        }
+
+        .photo { 
+            /* As 3 linhas de código abaixo foram tiradas do site: https://www.w3.org/Style/Examples/007/center.pt_BR.html 
+            com o intuito de centralizar a imagem inserida*/
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;
+        }
+
+        .intro { 
+            line-height: 0px;
+        }
+
+    </style>
 </head>
 <body>
     <h1>
         Portfólio &lt;dev&gt;
     </h1>
-    <img id="photo" src="./foto.jpg" alt="Foto de André" width="500px">
-    <h2>
-        Meu nome é André e estou começando a minha carreira como dev. <br>
-        Esta é a página do meu Portfólio.
+    <img class="photo" id="photo" src="./foto.jpg" alt="Foto de André" width="500px">
+    <h2 class="texto">
+        Meu nome é André e estou no caminho para me tornar um dev <br>
     </h2>
+    <h3 class="intro">
+        Esta é a página do meu Portfólio.
+    </h3>
 
     <ul>
-        <li><a href="https://www.linkedin.com/in/moraesandre/">LinkedIn</a></li>
-        <li><a href="https://github.com/andremoraes98">GitHub</a></li>
+        <li><a class="links" href="https://www.linkedin.com/in/moraesandre/">LinkedIn</a></li>
+        <li><a class="links" href="https://github.com/andremoraes98">GitHub</a></li>
     </ul>
 
     <hr>
 
-    <h3 id="quality">Entre todas as habilidades que o curso da Trybe me prepara, <br>
+    <h3 class="texto" id="quality">Entre todas as habilidades que o curso da Trybe me prepara, <br>
     abaixo estão algumas das quais já aprendi:</h3>
-    <ul>
+    <ul class="list">
         <li>Git;</li>
         <li>GitHub;</li>
         <strong><li>Comunicação assertiva;</li></strong>
@@ -35,11 +80,11 @@
 
     <hr>
 
-    <h3 id="hobby">Hobbies</h3>
+    <h3 class="texto" id="hobby">Hobbies</h3>
 
-    <ul>
+    <ul class="list">
         <li>
-            Uma das coisas que eu mais gosto é acompanhar os vídeos do <strong><a href="https://www.youtube.com/c/manualdomundo" target="_blank">Manual do mundo</a></strong>! <br>
+            Uma das coisas que eu mais gosto é acompanhar os vídeos do <strong><a class="links" href="https://www.youtube.com/c/manualdomundo" target="_blank">Manual do mundo</a></strong>! <br>
             <em>O Iberê é fera e eu gosto muito da forma como ele difunde a programação!</em> 
         </li>
         <li>
@@ -52,8 +97,8 @@
    
     <hr>
 
-    <a href="#photo">Início</a> <br>
-    <a href="#quality">Lista</a> <br>
-    <a href="#hobby">Hobbies</a>   
+    <a class="links" href="#photo">Início</a> <br>
+    <a class="links" href="#quality">Lista</a> <br>
+    <a class="links" href="#hobby">Hobbies</a>   
 </body>
 </html>
