@@ -8,13 +8,9 @@ h1 {
     color: white;
 }
 
-hr{ 
-    border-color: #262d34;
-}
-
-.texto, h3 { 
+.titulo, .intro { 
     color: #627d98;
-    text-align: center
+    text-align: center;
 }
 
 .links { 
@@ -22,39 +18,47 @@ hr{
     color: #c62828;
 }
 
-.list { 
+.links:hover { 
+    background-color: cornflowerblue;
+    color: cornsilk;
+}
+
+.list-container { 
     color: #0e34a0;
     text-align: center;
     list-style-type: square;
 }
 
 .photo { 
-    /* As 3 linhas de código abaixo foram tiradas do site: https://www.w3.org/Style/Examples/007/center.pt_BR.html 
-    com o intuito de centralizar a imagem inserida*/
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 100%;
-}
-
-.intro { 
-    line-height: 0px;
+    float: left;
+    width: 500px;
+    background-color: white;
+    padding: 1px;
 }
 
 .code { 
     background-color: white;
     color: tomato;
+    margin-bottom: 100px;
 }
 
-div.listas { 
+.list { 
     width: 30%;
-    margin: auto;
-    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
     vertical-align: middle;
-    padding: 30px 70px;
 }
 
 .content { 
     width: 80%;
     margin: auto;
+}
+
+div { 
+}
+
+.photo-container { 
+    height: 500px;
 }
