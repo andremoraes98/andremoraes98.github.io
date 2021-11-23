@@ -1,5 +1,6 @@
 body{ 
     background-color: #121212;
+    font-family: sans-serif;
 }
 
 h1 { 
@@ -24,6 +25,7 @@ hr{
 .list { 
     color: #0e34a0;
     text-align: center;
+    list-style-type: square;
 }
 
 .photo { 
@@ -42,4 +44,17 @@ hr{
 .code { 
     background-color: white;
     color: tomato;
+}
+
+div.listas { 
+    width: 30%;
+    margin: auto;
+    display:inline-block;
+    vertical-align: middle;
+    padding: 30px 70px;
+}
+
+.content { 
+    width: 80%;
+    margin: auto;
 }
