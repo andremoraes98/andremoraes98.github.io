@@ -1,3 +1,16 @@
+body {
+    background-image: url(./background.jpg);
+    font-family: sans-serif;
+}
+span {
+    font-size: 20px;
+}
+
+p {
+    font-size: 40px;
+    margin: 25px 0px 10px;
+}
+
 #color-palette, h1, .line, main {
     text-align: center;
 }
@@ -28,8 +41,7 @@
 }
 
 #clear-board {
-    margin-top: 30px;
-    margin-bottom:15px;
+    margin:15px 0px 25px;
 }
 
 .line {
@@ -41,4 +53,8 @@
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
+}
+
+#creatBoard {
+    margin-bottom: 8px;
 }
