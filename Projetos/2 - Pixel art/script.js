@@ -21,7 +21,7 @@ function redefine () {
 }
 
 // 10 - inserir pixels com os valores que aparecem no input
-let input = document.querySelector("input")
+let input = document.querySelector("#size")
 let buttonCreat = document.querySelector("#generate-board")
 
 buttonCreat.addEventListener("click", alertInput)
@@ -30,10 +30,18 @@ function alertInput () {
     if (input.value === "") {
         alert("Board inválido!")
     } else {
+        removePixels()
         creatPixel(input.value)
     }
 }
-window.getComputedStyle(document.querySelector(".line"))
+function removePixels() {
+    let boardSize = document.querySelectorAll(".line")
+
+    for (let index = 0; index < boardSize.length; index += 1) {
+        boardSize[index].remove()
+    }
+}
+
 function creatPixel (newBoardSize) {
 // 11 - se o numero inserido for menor que 5, o tamanho minimo tem que ser 5. Se for maior que 50, o o numero maior é 50
     if ( newBoardSize > 50 ) {
@@ -59,7 +67,7 @@ function creatPixel (newBoardSize) {
             newPx.classList.add("pixel")
             if (linha >= sizePixelBoard ) {
                 childrenOfPixelBoard[linha].appendChild(newPx) // adicionando a quantidade de pixels que foi inserida no input em cada linha que foi criada dinamicamente
-            } else if (coluna >= 5) {
+            } else if (coluna >= sizePixelBoard) {
                 childrenOfPixelBoard[linha].appendChild(newPx) // adicionando pixels a mais para que a quantidade total seja equivalente a quantidade colocada no input
             }
         }

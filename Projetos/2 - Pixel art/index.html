@@ -10,59 +10,33 @@
 <body>
     <header>
         <h1 id="title">
-            Paleta de Cores
+            Pixel Art
         </h1>
     </header>
     <main>
-        <section id="color-palette">
-            <input type="color" id="pallet" class="selected" value="#000000">
+        <section id="creatBoard">
+            <span>
+                Escolha o tamanho (de 1 a 50):
+            </span>
+            <input id="size" type="number" min="1" max="50" id="board-size">
+            <button id="generate-board">Let's GO!</button>
         </section>
 
-        <section id="creatBoard">
-            <input type="number" min="1" max="50" id="board-size">
-            <button id="generate-board">VQV</button>
+        <section id="color-palette">
+            <span>
+                Escolha a cor:
+            </span>
+            <input type="color" id="pallet" class="selected" value="#000000">
+            <p style="font-size: 30px;">
+                Boa pintura! 
+            </p>
         </section>
 
         <button id="clear-board">
-            Limpar
+            Limpar a minha arte
         </button>
 
         <section id="pixel-board">
-            <div class="line">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            <div class="line">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            <div class="line">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            <div class="line">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
-            <div class="line">
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-                <div class="pixel"></div>
-            </div>
         </section>
     </main>
     <script src="script.js"></script>
