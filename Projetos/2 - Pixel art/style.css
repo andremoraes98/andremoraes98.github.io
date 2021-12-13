@@ -1,3 +1,11 @@
+body {
+    background-image: url(./background.jpg);
+}
+
+h1 {
+    font-family: sans-serif;
+}
+
 #color-palette, h1, .line, main {
     text-align: center;
 }
