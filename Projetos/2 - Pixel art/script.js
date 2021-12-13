@@ -44,8 +44,8 @@ function removePixels() {
 
 function creatPixel (newBoardSize) {
 // 11 - se o numero inserido for menor que 5, o tamanho minimo tem que ser 5. Se for maior que 50, o o numero maior é 50
-    if ( newBoardSize > 50 ) {
-        newBoardSize = 50
+    if ( newBoardSize > 40 ) {
+        newBoardSize = 40
     }
     let newLine = document.createElement('div')
     let sizePixelBoard = document.querySelectorAll(".line").length
@@ -72,12 +72,4 @@ function creatPixel (newBoardSize) {
             }
         }
     }
-}
-
-
-// 12 - gerar cores aleatórias
-let colors = document.querySelectorAll(".color")
-
-for (let index = 1; index < colors.length; index += 1) {
-    colors[index].style.backgroundColor = "rgb(" + (Math.random() * 255)+1+ ", " + (Math.random() * 255)+1 + ", " + (Math.random() * 255)+1 + ")"
 }
