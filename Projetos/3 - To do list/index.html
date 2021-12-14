@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>
-            Minha Lista de Tarefas
+            Lista de Tarefas
         </h1>
         <p id="funcionamento">
             Clique duas vezes em um item para marcá-lo como completo
@@ -24,19 +24,22 @@
 
         <ol id="lista-tarefas"></ol>
 
-        <button id="apaga-tudo"> Apagar </button>
-
-        <button id="remover-finalizados"> Concluir Tasks </button>
-
-        <button id="salvar-tarefas"> Salvar Tarefas </button>
-
-        <button id="mover-cima"> Mover para cima </button>
-        
-        <button id="mover-baixo"> Mover para baixo </button>
-        
-
-        <button id="remover-selecionado"> Concluir Selecionado </button>
     </main>
+
+    <footer>
+        <button id="mover-cima"> &uparrow; </button> <!-- fonte da pesquisa: http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html -->
+            
+        <button id="mover-baixo"> &downarrow; </button> <!-- fonte da pesquisa: http://arquivo.devmedia.com.br/artigos/devmedia/html-entities.html -->
+
+        <button id="apaga-tudo"> Apagar <strong>Todas</strong> &Cross; </button>
+
+        <button id="remover-selecionado" class="remove"> Concluir Selecionado &#10004; </button>
+
+        <button id="remover-finalizados" class="remove"> Concluir <strong>Todas</strong> &#10004; </button> 
+        <!-- fonte da pesquisa: https://unicode-table.com/pt/2714/ -->
+
+        <button id="salvar-tarefas"> Salvar Tarefas &#128190; </button> <!-- fonte da pesquisa: https://unicode-table.com/pt/1F4BE/ -->
+    </footer>
     
     <script src="script.js"></script>
 </body>
