@@ -3,7 +3,8 @@
 }
 
 .selected {
-    background-color: rgb(128, 128, 128)
+    background-color: burlywood;
+    width: fit-content;
 }
 
 ol {
@@ -14,10 +15,13 @@ ol {
 
 li {
     text-align: left;
+    font-size: 20px;
 }
 
 body { 
     text-align: center;
+    background-color: rgb(255, 241, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
@@ -25,15 +29,15 @@ footer {
 }
 
 button {
-    height: 25px;
-    border: none;
-    font-size: 15px;
+    height: 30px;
+    border: solid 1px;
+    font-size: 18px;
 }
 
 #mover-cima, #mover-baixo {
     background-color:lightskyblue;
     color:blue;
-    width: 25px;
+    width: 30px;
 }
 
 #apaga-tudo {
@@ -44,4 +48,12 @@ button {
 .remove {
     background-color:rgb(188, 255, 188);
     color:rgb(0, 143, 0);
+}
+
+#funcionamento {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 40px
 }
