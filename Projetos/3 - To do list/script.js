@@ -10,6 +10,7 @@ addButton.addEventListener("click", addTask)
 function addTask () {
     const liItem = document.createElement("li")
     liItem.innerText = input.value
+    liItem.classList.add("task")
     input.value = ""
     taskList.appendChild(liItem)
 }
@@ -19,8 +20,9 @@ taskList.addEventListener("click", addGrayBackground)
 
 // 8 - só um elemento pode ficar com o gray background simultaneamente
 function addGrayBackground (event) {
-    taskList.removeAttribute("style")
-    let taskListItem = document.querySelectorAll("li")
+    taskList.removeAttribute("class")
+    let taskListItem = document.querySelectorAll(".task")
+    console.log(taskListItem)
     for (let index = 0; index < taskListItem.length; index += 1) {
         taskListItem[index].classList.remove('selected')
     }
@@ -45,7 +47,7 @@ let clearButton = document.querySelector("#apaga-tudo")
 clearButton.addEventListener("click", removeListItem)
 
 function removeListItem() {
-    let taskListItem = document.querySelectorAll("li")
+    let taskListItem = document.querySelectorAll(".task")
     for ( let index = 0; index < taskListItem.length; index += 1 ) {
         taskListItem[index].remove();
     }

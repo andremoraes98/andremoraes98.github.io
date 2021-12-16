@@ -7,7 +7,7 @@
     width: fit-content;
 }
 
-ol {
+ol, ul {
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
@@ -52,8 +52,17 @@ button {
 
 #funcionamento {
     font-size: 25px;
+    margin-bottom: 15px;
 }
 
 h1 {
     font-size: 40px
+}
+
+input {
+    height: 24px;
+    font-size: 18px;
+}
+ul {
+    margin-bottom: 30px;
 }
