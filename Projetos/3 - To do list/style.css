@@ -1,0 +1,59 @@
+.completed {
+    text-decoration: line-through;
+}
+
+.selected {
+    background-color: burlywood;
+    width: fit-content;
+}
+
+ol {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    text-align: left;
+    font-size: 20px;
+}
+
+body { 
+    text-align: center;
+    background-color: rgb(255, 241, 224);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer {
+    height: 25px;
+}
+
+button {
+    height: 30px;
+    border: solid 1px;
+    font-size: 18px;
+}
+
+#mover-cima, #mover-baixo {
+    background-color:lightskyblue;
+    color:blue;
+    width: 30px;
+}
+
+#apaga-tudo {
+    background-color:rgb(255, 177, 177);
+    color:rgb(255, 0, 0);
+}
+
+.remove {
+    background-color:rgb(188, 255, 188);
+    color:rgb(0, 143, 0);
+}
+
+#funcionamento {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 40px
+}
