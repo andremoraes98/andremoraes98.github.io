@@ -33,6 +33,7 @@ validation
     {
       rule: 'maxLength',
       value: 40,
+      errorMessage: 'O nome não pode conter mais que 40 caracteres.',
     },
   ])
   .addField('#E-mail', [
@@ -43,6 +44,7 @@ validation
     {
       rule: 'maxLength',
       value: 50,
+      errorMessage: 'O e-mail não pode conter mais que 50 caracteres.',
     },
   ])
   .addField('#CPF', [
@@ -53,6 +55,7 @@ validation
     {
       rule: 'maxLength',
       value: 11,
+      errorMessage: 'O CPF não pode conter mais que 11 caracteres.',
     },
   ])
   .addField('#Endereço', [
@@ -63,6 +66,7 @@ validation
     {
       rule: 'maxLength',
       value: 200,
+      errorMessage: 'O endereço não pode conter mais que 200 caracteres.',
     },
   ])
   .addField('#Cidade', [
@@ -73,6 +77,7 @@ validation
     {
       rule: 'maxLength',
       value: 28,
+      errorMessage: 'A cidade não pode conter mais que 28 caracteres.',
     },
   ])
   .addField('#Estado', [
@@ -90,6 +95,7 @@ validation
     {
       rule: 'maxLength',
       value: 1000,
+      errorMessage: 'O resumo do currículo não pode conter mais que 1000 caracteres.',
     },
   ])
   .addField('#Cargo', [
@@ -100,6 +106,7 @@ validation
     {
       rule: 'maxLength',
       value: 40,
+      errorMessage: 'O cargo não pode conter mais que 40 caracteres.',
     },
   ])
   .addField('#Descricao', [
@@ -110,6 +117,7 @@ validation
     {
       rule: 'maxLength',
       value: 500,
+      errorMessage: 'A descrição do cargo não pode conter mais que 500 caracteres.',
     },
   ])
   .addField('#Data', [
