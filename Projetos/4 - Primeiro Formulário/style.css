@@ -1,0 +1,12 @@
+#parte1, #parte2 {
+  background-color: #f5f5f5;
+  border: black 2px solid;
+  border-radius: 6px;
+  padding: 30px 15px;
+  margin-bottom: 50px;
+  box-shadow: black 10px 5px 10px;
+}
+
+body {
+  background-color: #fffafa;
+}
