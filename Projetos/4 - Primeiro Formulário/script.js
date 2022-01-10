@@ -53,6 +53,10 @@ validation
       value: 50,
       errorMessage: 'O e-mail não pode conter mais que 50 caracteres.',
     },
+    {
+      rule: 'email',
+      errorMessage: 'E-mail é inválido.',
+    },
   ])
   .addField('#CPF', [
     {
