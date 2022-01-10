@@ -127,15 +127,22 @@ validation
     },
   ])
   .onSuccess(() => {
+    const stateValue = document.querySelector('#Estado').value;
+    const stateDiv = document.createElement('div');
+    stateDiv.innerHTML = 'Estado: ' + stateValue;
     for (let index = 0; index < input.length; index += 1) {
       const newDiv = document.createElement('div');
       if (index === 5) {
         newDiv.innerHTML = 'Tipo de moradia: ' + document.querySelector('input[name="tipo-de-moradia"]:checked').value;
         contentModal.appendChild(newDiv);
+        console.log(stateDiv)
         index += 1
       } else {
         newDiv.innerHTML = input[index].id + ': ' + input[index].value;
         contentModal.appendChild(newDiv);
+        if (index === 4) {
+          contentModal.appendChild(stateDiv);
+        }
       }
     }
 
