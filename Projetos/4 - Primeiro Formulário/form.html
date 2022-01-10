@@ -24,80 +24,95 @@
   <form action="#" id="form" method="get">
     <div class="container mb-3">
       <div id="parte1">
-        <label for="Nome">
-          Nome:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="Nome"
-        name='nome'>
+        <div id="name">
+          <label for="Nome">
+            Nome: *
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="Nome"
+          name='nome'
+          >
+        </div>
+  
+        <br>
+        
+        <div id="email">
+          <label for="E-mail">
+            E-mail: *
+          </label>
+          <input 
+          class='form-control'
+          type="email"
+          id="E-mail"
+          name='email'
+          placeholder="exemplo@domínio"
+          >
+        </div>
   
         <br>
   
-        <label for="E-mail">
-          E-mail:
-        </label>
-        <input 
-        class='form-control'
-        type="email"
-        id="E-mail"
-        name='email'
-        placeholder="exemplo@domínio"
-        >
+        <div id="cpf">
+          <label for="CPF">
+            CPF: *
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="CPF"
+          name='cpf'
+          placeholder="Somente números"
+          >
+        </div>
   
         <br>
   
-        <label for="CPF">
-          CPF:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="CPF"
-        name='cpf'
-        placeholder="Somento números"
-        >
+        <div id="adress">
+          <label for="Endereço">
+            Endereço: *
+          </label>
+          <input
+          class='form-control'
+          type='text'
+          id="Endereço"
+          name='endereco'
+          >
+        </div>
   
         <br>
   
-        <label for="Endereço">
-          Endereço:
-        </label>
-        <input
-        class='form-control'
-        type='text'
-        id="Endereço"
-        name='endereco'>
-  
+        <div id="city">
+          <label for="Cidade">
+            Cidade: *
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="Cidade"
+          name='cidade'
+          >
+        </div>
+
         <br>
   
-        <label for="Cidade">
-          Cidade:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="Cidade"
-        name='cidade'>
-  
-        <br>
-  
-        <label for="Estado">
-          Estado:
-        </label>
-        <select
-        class='form-select'
-        name="estado"
-        id="Estado">
-          <option hidden disabled selected value> Selecione uma opção </option> <!-- Retirado do link https://qastack.com.br/programming/8605516/default-select-option-as-blank -->
-        </select>
+        <div id="state">
+          <label for="Estado">
+            Estado: *
+          </label>
+          <select
+          class='form-select'
+          name="estado"
+          id="Estado">
+            <option hidden disabled selected value> Selecione uma opção </option> <!-- Retirado do link https://qastack.com.br/programming/8605516/default-select-option-as-blank -->
+          </select>
+        </div>
   
         <br>
   
         <div id="tipo-de-moradia-radio-group">
           <label for="tipo-de-moradia">
-            Tipo de moradia:
+            Tipo de moradia: *
           </label>
   
           <br>
@@ -129,52 +144,60 @@
       </div>
 
       <div id="parte2">
-        <label for="Cargo">
-          Cargo:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="Cargo"
-        name="cargo">
+        <div id="office">
+          <label for="Cargo">
+            Cargo: *
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="Cargo"
+          name="cargo">
+        </div>
   
         <br>
   
-        <label for="Descricao">
-          Descreva o cargo:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="Descricao"
-        name="descricao-cargo">
+        <div id="office-describe">
+          <label for="Descricao">
+            Rotina do cargo:*
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="Descricao"
+          name="descricao-cargo">
+        </div>
 
         <br>
 
-        <label for="Resumo">
-          Resumo do currículo:
-        </label>
-  
-        <br>
-  
-        <textarea
-        class='form-control'
-        name="curriculo"
-        id="Resumo"
-        cols="40"
-        rows="7"></textarea>
+        <div id="office-abstract">
+          <label for="Resumo">
+            Descrição do currículo:
+          </label>
+    
+          <br>
+    
+          <textarea
+          class='form-control'
+          name="curriculo"
+          id="Resumo"
+          cols="40"
+          rows="7"></textarea>
+        </div>
   
         <br>
 
-        <label for="Data">
-          Data inicial:
-        </label>
-        <input
-        class='form-control'
-        type="text"
-        id="Data"
-        name='data-inicio'
-        placeholder="dd/mm/aaaa">
+        <div id="date">
+          <label for="Data">
+            Data: *
+          </label>
+          <input
+          class='form-control'
+          type="text"
+          id="Data"
+          name='data-inicio'
+          placeholder="dd/mm/aaaa">
+        </div>
 
       </div>
     </div>
