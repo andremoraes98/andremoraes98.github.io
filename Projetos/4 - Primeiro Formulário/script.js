@@ -57,6 +57,10 @@ validation
       value: 11,
       errorMessage: 'O CPF não pode conter mais que 11 caracteres.',
     },
+    {
+      rule: 'number',
+      errorMessage: 'O CPF pode conter apenas números.',
+    },
   ])
   .addField('#Endereço', [
     {
