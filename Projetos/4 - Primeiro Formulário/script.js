@@ -87,7 +87,7 @@ validation
   .addField('#Cidade', [
     {
       rule: 'required',
-      errorMessage: 'Cidade é obrigatório.',
+      errorMessage: 'Cidade é obrigatória.',
     },
     {
       rule: 'maxLength',
@@ -101,12 +101,8 @@ validation
       errorMessage: 'Estado é obrigatório.',
     },
   ])
-  .addRequiredGroup('#tipo-de-moradia-radio-group', 'Selecione um tipo de moradia')
+  .addRequiredGroup('#tipo-de-moradia-radio-group', 'Selecione o tipo de moradia')
   .addField('#Resumo', [
-    {
-      rule: 'required',
-      errorMessage: 'Resumo do currículo é obrigatório.',
-    },
     {
       rule: 'maxLength',
       value: 1000,
@@ -127,18 +123,18 @@ validation
   .addField('#Descricao', [
     {
       rule: 'required',
-      errorMessage: 'Descrição do cargo é obrigatório.',
+      errorMessage: 'Descrição da rotina é obrigatória.',
     },
     {
       rule: 'maxLength',
       value: 500,
-      errorMessage: 'A descrição do cargo não pode conter mais que 500 caracteres.',
+      errorMessage: 'A descrição da rotina não pode conter mais que 500 caracteres.',
     },
   ])
   .addField('#Data', [
     {
       rule: 'required',
-      errorMessage: 'Data é obrigatório.',
+      errorMessage: 'Data é obrigatória.',
     },
   ])
   .onSuccess(() => {
