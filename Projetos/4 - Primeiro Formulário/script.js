@@ -90,7 +90,7 @@ validation
       errorMessage: 'Estado é obrigatório.',
     },
   ])
-  .addRequiredGroup('#tipo-de-moradia-radio-group')
+  .addRequiredGroup('#tipo-de-moradia-radio-group', 'Selecione um tipo de moradia')
   .addField('#Resumo', [
     {
       rule: 'required',
