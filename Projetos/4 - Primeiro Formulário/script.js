@@ -1,5 +1,4 @@
 const date = document.querySelector('#Data');
-const validation = new JustValidate('#form');
 const statesList = document.querySelector('#Estado');
 const statesBR = ['Acre', 'Alagoas', 'Amapá', 'Amazonas', 'Bahia', 'Ceará', 'Espírito Santo', 'Goiás', 'Maranhão', 'Mato Grosso', 'Mato Grosso do Sul', 'Minas Gerais', 'Pará', 'Paraíba', 'Paraná', 'Pernambuco', 'Piauí', 'Rio de Janeiro', 'Rio Grande do Norte', 'Rio Grande do Sul', 'Rondônia', 'Roraima', 'Santa Catarina', 'São Paulo', 'Sergipe', 'Tocantins', 'Distrito Federal'];
 const modal = new bootstrap.Modal(document.querySelector('#modal'));
@@ -9,6 +8,14 @@ const input = document.querySelectorAll('input');
 const resetButton = document.querySelector('#reset');
 const confirmButton = document.querySelector('#confirm');
 const cancelButton = document.querySelector('#cancel');
+const validation = new JustValidate('#form',
+  {
+    errorFieldCssClass: 'is-invalid',
+    errorFieldStyle: {
+      border: '1px solid red',
+    }
+  }
+);
 
 // Adição dos estados no select
 for (let index = 0; index < statesBR.length; index += 1) {
