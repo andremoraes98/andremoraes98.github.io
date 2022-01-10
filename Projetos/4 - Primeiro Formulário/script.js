@@ -135,7 +135,6 @@ validation
       if (index === 5) {
         newDiv.innerHTML = 'Tipo de moradia: ' + document.querySelector('input[name="tipo-de-moradia"]:checked').value;
         contentModal.appendChild(newDiv);
-        console.log(stateDiv)
         index += 1
       } else {
         newDiv.innerHTML = input[index].id + ': ' + input[index].value;
