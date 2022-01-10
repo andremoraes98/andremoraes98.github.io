@@ -120,7 +120,7 @@ validation
       errorMessage: 'O cargo não pode conter mais que 40 caracteres.',
     },
   ])
-  .addField('#Descricao', [
+  .addField('#Rotina', [
     {
       rule: 'required',
       errorMessage: 'Descrição da rotina é obrigatória.',
