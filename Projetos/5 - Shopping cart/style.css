@@ -181,6 +181,7 @@ button.search {
   display: flex;
   align-items: center;
   margin: 5px 0;
+  cursor: pointer;
 }
 
 .image__item {
