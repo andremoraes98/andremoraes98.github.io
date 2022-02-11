@@ -54,14 +54,15 @@ const addRemovePriceOfProduct = (priceOfProduct, type) => {
     } else if (type === '-') {
       totalPrice -= priceOfProduct;
     }
-    htmlPrice.innerHTML = totalPrice;
+    htmlPrice.innerHTML = totalPrice.toFixed(2);
   }
 };
 
 function cartItemClickListener(e) {
   // coloque seu código aqui
-  addRemovePriceOfProduct(parseFloat(e.target.parentElement.id, 10), '-');
-  e.target.parentElement.remove();
+  console.log(e.target.closest('.cart__item'));
+  addRemovePriceOfProduct(parseFloat(e.target.closest('.cart__item').id, 10), '-');
+  e.target.closest('.cart__item').remove();
 }
 
 function createCartItemElement({ name, salePrice, image }) {
