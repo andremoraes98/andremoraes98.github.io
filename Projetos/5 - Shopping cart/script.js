@@ -61,7 +61,7 @@ const addRemovePriceOfProduct = (priceOfProduct, type) => {
 function cartItemClickListener(e) {
   // coloque seu código aqui
   addRemovePriceOfProduct(parseFloat(e.target.parentElement.id, 10), '-');
-  e.target.parentElement.remove();
+  e.target.closest('.cart__item').remove();
 }
 
 function createCartItemElement({ name, salePrice, image }) {
