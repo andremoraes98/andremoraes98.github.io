@@ -167,8 +167,9 @@ button.search {
   width: 170px;
   height: 35px;
   margin: 20px auto;
-  border: 2px solid rgb(5, 52, 219);
-  background-color: rgb(249, 249, 246);
+  border: 1px solid red;
+  background-color: rgb(255, 116, 116);
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -181,7 +182,11 @@ button.search {
   display: flex;
   align-items: center;
   margin: 5px 0;
-  cursor: pointer;
+  justify-content: space-between;
+}
+
+.cart__item div{
+  width: 70%;
 }
 
 .image__item {
@@ -192,4 +197,17 @@ button.search {
 .price {
   text-align: center;
   margin: 50px 0 10px;
+}
+
+.item__price {
+  text-align: center;
+  margin: 5px 0;
+  font-size: large;
+  font-weight: 600;
+}
+
+#trash {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
 }
