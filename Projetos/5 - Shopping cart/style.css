@@ -182,7 +182,11 @@ button.search {
   display: flex;
   align-items: center;
   margin: 5px 0;
-  cursor: pointer;
+  justify-content: space-between;
+}
+
+.cart__item div{
+  width: 70%;
 }
 
 .image__item {
@@ -200,4 +204,10 @@ button.search {
   margin: 5px 0;
   font-size: large;
   font-weight: 600;
+}
+
+#trash {
+  font-size: 30px;
+  color: red;
+  cursor: pointer;
 }

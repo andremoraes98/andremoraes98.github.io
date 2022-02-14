@@ -61,23 +61,30 @@ const addRemovePriceOfProduct = (priceOfProduct, type) => {
 
 function cartItemClickListener(e) {
   // coloque seu código aqui
-  console.log(e.target.closest('.cart__item'));
-  addRemovePriceOfProduct(parseFloat(e.target.closest('.cart__item').id, 10), '-');
-  e.target.closest('.cart__item').remove();
+  if (e.target.id === 'trash') {
+    e.target.closest('.cart__item').remove();
+    addRemovePriceOfProduct(parseFloat(e.target.closest('.cart__item').id, 10), '-');
+    saveCartItems('cartItems', containerCartItems.innerHTML);
+  }
 }
 
 function createCartItemElement({ name, salePrice, image }) {
   const li = document.createElement('li');
   const liImg = document.createElement('img');
   const liDiv = document.createElement('div');
+  const liTrash = document.createElement('i');
   liImg.src = image;
   liImg.className = 'image__item';
   li.className = 'cart__item';
   liDiv.innerText = `${name}
   Preço: $${salePrice}`;
+  liTrash.className = 'material-icons'
+  liTrash.innerHTML = 'delete'
+  liTrash.id = 'trash'
   li.id = salePrice;
   li.appendChild(liImg);
   li.appendChild(liDiv);
+  li.appendChild(liTrash);
   li.addEventListener('click', cartItemClickListener);
   return li;
 }
@@ -137,7 +144,6 @@ const searchProducts = async () => {
     refineProducts.forEach((product) => {
       containerProducts
       .appendChild(createProductItemElement(product));
-      console.log(product)
     }) 
   }
 };
