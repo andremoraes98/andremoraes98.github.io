@@ -26,11 +26,20 @@ function getUserMediaSupported() {
     navigator.mediaDevices.getUserMedia);
 }
 
+const changeInformation = () => {
+  const informationEN = document.querySelector('.information-en');
+  const informationPTBR = document.querySelector('.information-pt-br');
+  console.log(informationEN, informationPTBR)
+  informationEN.innerHTML = 'Hold some objects up close to your webcam to get a real-time classification!';
+  informationPTBR.innerHTML = 'Segure alguns objetos perto da webcam para ver uma classificação em tempo real!';
+};
+
 // If webcam supported, add event listener to button for when user
 // wants to activate it to call enableCam function which we will 
 // define in the next step.
 if (getUserMediaSupported()) {
   enableWebcamButton.addEventListener('click', enableCam);
+  enableWebcamButton.addEventListener('click', changeInformation);
 } else {
   console.warn('getUserMedia() is not supported by your browser');
 }
@@ -71,6 +80,7 @@ cocoSsd.load().then(function (loadedModel) {
   model = loadedModel;
   // Show demo section now model is ready to use.
   demosSection.classList.remove('invisible');
+  enableWebcamButton.classList.remove('invisible');
 });
 
 const children = [];
