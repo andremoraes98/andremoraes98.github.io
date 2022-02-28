@@ -37,6 +37,11 @@ h2 {
 
 .planet img {
   width: 80%;
+  transition: width 0.7s ease-in-out;
+}
+
+.planet img:hover {
+  width: 110%;
 }
 
 .planet p {
@@ -52,6 +57,11 @@ h2 {
   padding: 20px;
   margin: 10px 5px;
   width: 10%;
+  transition: border 0.2s ease-in-out;
+}
+
+.mission:hover {
+  border: 7px rgb(71, 71, 71) solid;
 }
 
 .gray {
