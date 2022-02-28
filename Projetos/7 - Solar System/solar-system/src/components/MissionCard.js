@@ -9,18 +9,18 @@ class MissionCard extends React.Component {
     const { destination } = this.props;
 
     return (
-      <div data-testid="mission-card">
+      <div className='mission' data-testid="mission-card">
         <p data-testid="mission-name">
-          { name }
+          Missão: <span className='gray'>{ name }</span>
         </p>
         <p data-testid="mission-year">
-          { year }
+          Ano: <span className='gray'>{ year }</span>
         </p>
         <p data-testid="mission-country">
-          { country }
+          País de origem: <span className='gray'>{ country }</span>
         </p>
         <p data-testid="mission-destination">
-          { destination }
+          Destino: <span className='gray'>{ destination }</span>
         </p>
       </div>
     );

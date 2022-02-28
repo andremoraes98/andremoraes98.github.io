@@ -7,7 +7,7 @@ import "./App.css"
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="planets">
         <Header />
         <SolarSystem />
         <Missions />
